@@ -21,39 +21,3 @@ burguer.addEventListener("click", () => {
 close.addEventListener("click", () => {
     mobile.classList.remove("active");
 })
-
-//-------------------------------------------------------
-const daniele = document.getElementById("daniele-btn");
-const emanuele = document.getElementById("emanuele-btn");
-
-function bgConfig() {
-    document.querySelector(".equipe-image").style.backgroundSize = "50% 100%";
-    document.querySelector(".equipe-image").style.backgroundRepeat = "no-repeat";
-    document.querySelector(".equipe-image").style.backgroundAttachment = "fixed";
-}
-
-daniele.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    daniele.classList.add("active");
-    emanuele.classList.remove("active");
-
-    document.getElementById("text-emanuele").style.display = "none";
-    document.getElementById("text-daniele").style.display = "block";
-
-    document.querySelector(".equipe-image").style.background = "url('../images/daniele.png')";
-    bgConfig();
-})
-
-emanuele.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    emanuele.classList.add("active");
-    daniele.classList.remove("active");
-
-    document.getElementById("text-daniele").style.display = "none";
-    document.getElementById("text-emanuele").style.display = "block";
-
-    document.querySelector(".equipe-image").style.background = "url('../images/emanuele.png')";
-    bgConfig();
-})
