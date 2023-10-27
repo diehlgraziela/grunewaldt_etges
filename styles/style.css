@@ -366,7 +366,7 @@ button:hover {
 .atuacao-cards .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 10px;
     max-width: 22%;
