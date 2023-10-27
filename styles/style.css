@@ -207,12 +207,10 @@ button:hover {
 
 /* SOBRE */
 .sobre-section {
-    background: var(--light-color);
     color: var(--dark-color);
     display: flex;
     align-items: center;
     gap: 4rem;
-    padding-bottom: 150px;
 }
 
 .sobre-section h2::after {
@@ -251,7 +249,6 @@ button:hover {
 
 /* EQUIPE */
 #equipe {
-    background: var(--light-color);
     color: var(--dark-color);
 }
 
@@ -279,11 +276,20 @@ button:hover {
     width: 100%;
 }
 
+#equipe .emanuele {
+    background: var(--light-color);
+}
+
 #equipe .daniele,
 #equipe .emanuele {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     align-items: center;
+}
+
+.equipe-line {
+    color: rgb(190, 160, 125, 0.15);
+    margin: 0 4rem;
 }
 
 /* #equipe .daniele .equipe-image {
@@ -540,11 +546,6 @@ button:hover {
     #equipe .emanuele .equipe-image {
         grid-row: 1;
     }
-
-    /* ÁREAS DE ATUAÇÃO */
-    .atuacao-cards .card {
-        max-width: 40%;
-    }
 }
 
 @media (max-width:820px) {
@@ -618,11 +619,6 @@ button:hover {
 
     .sobre-section h2::after {
         margin: 10px auto;
-    }
-
-    /* ÁREAS DE ATUAÇÃO */
-    .atuacao-cards .card {
-        max-width: 100%;
     }
 }
 
